@@ -1,8 +1,8 @@
 /* =============================================
-   APP COMPONENT STYLES — LIST BUILDER MODEL
+   APP COMPONENT STYLES â€” LIST BUILDER MODEL
    ============================================= */
 
-/* ── Install Banner ──────────────────────────── */
+/* â”€â”€ Install Banner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .install-banner {
   position: sticky;
   top: 0;
@@ -64,7 +64,7 @@
 
 .install-btn:hover { background: var(--lime-dim); }
 
-/* ── Header ─────────────────────────────────── */
+/* â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .app-header {
   position: sticky;
   top: 0;
@@ -139,7 +139,7 @@
   opacity: 0.7;
 }
 
-/* ── Header Tabs (Browse / My List) ─────────── */
+/* â”€â”€ Header Tabs (Browse / My List) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .header-tabs {
   display: flex;
   padding: 0 16px;
@@ -163,7 +163,9 @@
   text-transform: uppercase;
 }
 
-.header-tab:hover { color: var(--light); }
+@media (hover: hover) {
+  .header-tab:hover { color: var(--light); }
+}
 
 .header-tab.active {
   color: var(--lime);
@@ -181,7 +183,7 @@
   text-align: center;
 }
 
-/* ── Category Filter Tabs ────────────────────── */
+/* â”€â”€ Category Filter Tabs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cat-tabs-wrap {
   position: sticky;
   top: 93px;
@@ -217,7 +219,9 @@
   flex-shrink: 0;
 }
 
-.cat-tab:hover { background: var(--dark4); color: var(--light); }
+@media (hover: hover) {
+  .cat-tab:hover { background: var(--dark4); color: var(--light); }
+}
 
 .cat-tab.active {
   background: var(--tab-color, var(--lime));
@@ -240,7 +244,7 @@
   text-align: center;
 }
 
-/* ── Search ──────────────────────────────────── */
+/* â”€â”€ Search â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .search-wrap {
   position: relative;
   padding: 8px 16px 6px;
@@ -291,7 +295,7 @@
 
 .search-clear:hover { color: var(--light); }
 
-/* ── Main Content ────────────────────────────── */
+/* â”€â”€ Main Content â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .app-main {
   flex: 1;
   padding: 8px 0 88px;
@@ -302,7 +306,7 @@
   padding: 0 0 24px;
 }
 
-/* ── Category Section (Browse) ───────────────── */
+/* â”€â”€ Category Section (Browse) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .category-section { margin-bottom: 4px; }
 
 .category-header {
@@ -332,7 +336,7 @@
   border-radius: 50px;
 }
 
-/* ── Section Group ───────────────────────────── */
+/* â”€â”€ Section Group â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .section-group { padding: 0 16px; }
 
 .section-sub {
@@ -351,7 +355,7 @@
   gap: 2px;
 }
 
-/* ── Grocery Item ────────────────────────────── */
+/* â”€â”€ Grocery Item â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .grocery-item {
   display: flex;
   align-items: flex-start;
@@ -365,14 +369,16 @@
   user-select: none;
 }
 
-.grocery-item:hover {
-  background: var(--dark3);
-  border-color: var(--dark4);
+@media (hover: hover) {
+  .grocery-item:hover {
+    background: var(--dark3);
+    border-color: var(--dark4);
+  }
 }
 
 .grocery-item:active { transform: scale(0.985); }
 
-/* On-list items stay full opacity — they're selected, not done */
+/* On-list items stay full opacity â€” they're selected, not done */
 .grocery-item.on-list {
   background: var(--dark3);
   border-color: var(--dark4);
@@ -437,7 +443,7 @@
   margin-top: 1px;
 }
 
-/* ── Empty State ─────────────────────────────── */
+/* â”€â”€ Empty State â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -452,7 +458,7 @@
 .empty-emoji { font-size: 44px; line-height: 1; }
 .empty-state p { font-size: 14px; font-weight: 500; }
 
-/* ── My List View ────────────────────────────── */
+/* â”€â”€ My List View â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .mylist-empty {
   display: flex;
   flex-direction: column;
@@ -585,9 +591,11 @@
   transition: all var(--transition);
 }
 
-.mylist-remove:hover {
-  background: rgba(255, 80, 80, 0.15);
-  color: #ff6b6b;
+@media (hover: hover) {
+  .mylist-remove:hover {
+    background: rgba(255, 80, 80, 0.15);
+    color: #ff6b6b;
+  }
 }
 
 /* My List action buttons */
@@ -633,7 +641,7 @@
 
 .mylist-reset-btn:active { transform: scale(0.97); }
 
-/* ── Bottom Bar (Browse tab) ─────────────────── */
+/* â”€â”€ Bottom Bar (Browse tab) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .bottom-bar {
   position: fixed;
   bottom: 0;
@@ -679,7 +687,7 @@
 
 .bar-add:hover { background: var(--lime-dim); }
 
-/* ── Confirm Modal message ───────────────────── */
+/* â”€â”€ Confirm Modal message â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .confirm-message {
   font-size: 14px;
   color: var(--muted);
@@ -693,7 +701,7 @@
 
 .btn-danger:hover { background: #c62828 !important; }
 
-/* ── Modal (shared) ──────────────────────────── */
+/* â”€â”€ Modal (shared) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .modal-overlay {
   position: fixed;
   inset: 0;
