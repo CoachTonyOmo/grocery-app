@@ -1,0 +1,132 @@
+export const CATEGORIES = [
+  'All',
+  'Protein',
+  'Carbs',
+  'Veggies',
+  'Fats',
+  'Pantry',
+];
+
+export const GROCERY_DATA = [
+  // PROTEIN - Animal Based
+  { id: 'p1',  name: 'Chicken Breasts',                       category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'p2',  name: 'Chicken Thighs',                        category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'p3',  name: 'Rotisserie Chicken',                    category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: false, budget: true  },
+  { id: 'p4',  name: 'Lean Ground Beef (90%+ lean)',          category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: true,  budget: false },
+  { id: 'p5',  name: 'Steak (sirloin, round, flank)',         category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: false },
+  { id: 'p6',  name: 'Lean Pork (tenderloin, chops)',         category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'p7',  name: 'Bison',                                 category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: false },
+  { id: 'p8',  name: 'Turkey (ground, breast)',               category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'p9',  name: 'Fish (cod, tilapia, halibut)',          category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: false },
+  { id: 'p10', name: 'Scallops',                              category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: false },
+  { id: 'p11', name: 'Shrimp',                                category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: true  },
+  { id: 'p12', name: 'Liquid Egg Whites',                     category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: false, budget: true  },
+  { id: 'p13', name: 'Whole Eggs',                            category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: false, budget: true  },
+  { id: 'p14', name: 'Cottage Cheese',                        category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: false, budget: true  },
+  { id: 'p15', name: 'Greek Yogurt (0% or 2%)',               category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: false, budget: true  },
+  { id: 'p16', name: 'String Cheese / Lower Fat Cheese',      category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: false, budget: true  },
+  { id: 'p17', name: 'Beef Jerky',                            category: 'Protein', subcategory: 'Animal Based',   mealPrep: false, freezer: false, budget: false },
+  { id: 'p18', name: 'Bone Broth',                            category: 'Protein', subcategory: 'Animal Based',   mealPrep: true,  freezer: true,  budget: false },
+  // PROTEIN - Plant Based
+  { id: 'p19', name: 'Beans, Lentils, Peas',                  category: 'Protein', subcategory: 'Plant Based',    mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'p20', name: 'Tempeh, Tofu, or Edamame',              category: 'Protein', subcategory: 'Plant Based',    mealPrep: true,  freezer: true,  budget: true  },
+  // PROTEIN - Supplement
+  { id: 'p21', name: 'Quality Whey Protein Powder',           category: 'Protein', subcategory: 'Supplement',     mealPrep: false, freezer: false, budget: false },
+  { id: 'p22', name: 'Plant-Based Protein Powder',            category: 'Protein', subcategory: 'Supplement',     mealPrep: false, freezer: false, budget: false },
+
+  // CARBS - Whole Grains
+  { id: 'c1',  name: 'White Rice',                            category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'c2',  name: 'Brown Rice',                            category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'c3',  name: 'Quinoa',                                category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: true,  freezer: true,  budget: false },
+  { id: 'c4',  name: 'Ezekiel Bread',                         category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: false, freezer: true,  budget: false },
+  { id: 'c5',  name: 'Whole Wheat Bread',                     category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: false, freezer: true,  budget: true  },
+  { id: 'c6',  name: 'Oats / Oatmeal',                        category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: true,  freezer: false, budget: true  },
+  { id: 'c7',  name: 'Whole Grain Pasta',                     category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: true,  freezer: false, budget: true  },
+  { id: 'c8',  name: 'Whole Wheat Pancakes',                  category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'c9',  name: 'Whole Wheat Wraps / Tortillas',         category: 'Carbs',   subcategory: 'Whole Grains',   mealPrep: false, freezer: true,  budget: true  },
+  // CARBS - Beans & Legumes
+  { id: 'c10', name: 'Beans (all varieties)',                  category: 'Carbs',   subcategory: 'Beans & Legumes',mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'c11', name: 'Peas',                                  category: 'Carbs',   subcategory: 'Beans & Legumes',mealPrep: true,  freezer: true,  budget: true  },
+  // CARBS - Fruit
+  { id: 'c12', name: 'Banana',                                category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: true,  budget: true  },
+  { id: 'c13', name: 'Mangos',                                category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: true,  budget: false },
+  { id: 'c14', name: 'Blueberries',                           category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: true,  budget: false },
+  { id: 'c15', name: 'Apples',                                category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: false, budget: true  },
+  { id: 'c16', name: 'Watermelon',                            category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: false, budget: true  },
+  { id: 'c17', name: 'Cantaloupe',                            category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: false, budget: true  },
+  { id: 'c18', name: 'Oranges',                               category: 'Carbs',   subcategory: 'Fruit',          mealPrep: false, freezer: false, budget: true  },
+
+  // VEGGIES
+  { id: 'v1',  name: 'Asparagus',                             category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: false },
+  { id: 'v2',  name: 'Beets',                                 category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: false, budget: true  },
+  { id: 'v3',  name: 'Bell Peppers',                          category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v4',  name: 'Bok Choy',                              category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'v5',  name: 'Broccoli',                              category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v6',  name: 'Brussels Sprouts',                      category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v7',  name: 'Cabbage',                               category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: false, budget: true  },
+  { id: 'v8',  name: 'Carrots',                               category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v9',  name: 'Cauliflower',                           category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v10', name: 'Celery',                                category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'v11', name: 'Collard Greens',                        category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v12', name: 'Cucumber',                              category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'v13', name: 'Eggplant',                              category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'v14', name: 'Green Beans',                           category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v15', name: 'Kale',                                  category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v16', name: 'Lettuce (Romaine, Iceberg)',             category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'v17', name: 'Mushrooms',                             category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v18', name: 'Peas',                                  category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v19', name: 'Potato (Sweet & White)',                 category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: false, budget: true  },
+  { id: 'v20', name: 'Squash',                                category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'v21', name: 'Swiss Chard',                           category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: true,  budget: true  },
+  { id: 'v22', name: 'Tomato',                                category: 'Veggies', subcategory: 'Vegetables',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'v23', name: 'Frozen Veggie Mixes',                   category: 'Veggies', subcategory: 'Vegetables',     mealPrep: true,  freezer: true,  budget: true  },
+
+  // FATS - Plant Based
+  { id: 'f1',  name: 'Avocado',                               category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: false },
+  { id: 'f2',  name: 'Avocado Oil',                           category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: false },
+  { id: 'f3',  name: 'Extra Virgin Olive Oil',                category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: false },
+  { id: 'f4',  name: 'Coconut Oil',                           category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: false },
+  { id: 'f5',  name: 'Olives',                                category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: true  },
+  { id: 'f6',  name: 'Nuts & Seeds (Almonds, Chia, Flax)',    category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: true,  budget: false },
+  { id: 'f7',  name: 'Nut & Seed Butters',                    category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: false },
+  { id: 'f8',  name: 'Dark Chocolate (70%+ Cacao)',           category: 'Fats',    subcategory: 'Plant Based',    mealPrep: false, freezer: false, budget: false },
+  // FATS - Animal Based
+  { id: 'f9',  name: 'Cheese',                                category: 'Fats',    subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: true  },
+  { id: 'f10', name: 'Butter',                                category: 'Fats',    subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: true  },
+  { id: 'f11', name: 'Ghee',                                  category: 'Fats',    subcategory: 'Animal Based',   mealPrep: false, freezer: false, budget: false },
+  { id: 'f12', name: 'Egg Yolks',                             category: 'Fats',    subcategory: 'Animal Based',   mealPrep: false, freezer: false, budget: true  },
+  { id: 'f13', name: 'Higher Fat Fish (Salmon, Sardines, Mackerel)', category: 'Fats', subcategory: 'Animal Based', mealPrep: false, freezer: true, budget: false },
+  { id: 'f14', name: 'Higher Fat Dairy (Full-fat yogurt, cream)', category: 'Fats', subcategory: 'Animal Based',  mealPrep: false, freezer: false, budget: false },
+  { id: 'f15', name: 'Bacon',                                 category: 'Fats',    subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: true  },
+  { id: 'f16', name: 'Higher Fat Cuts of Meat',               category: 'Fats',    subcategory: 'Animal Based',   mealPrep: false, freezer: true,  budget: false },
+
+  // PANTRY - Cooking Oils
+  { id: 'pan1', name: 'Extra Virgin Olive Oil',               category: 'Pantry',  subcategory: 'Cooking Oils',   mealPrep: false, freezer: false, budget: false },
+  { id: 'pan2', name: 'Coconut Oil',                          category: 'Pantry',  subcategory: 'Cooking Oils',   mealPrep: false, freezer: false, budget: false },
+  { id: 'pan3', name: 'Avocado Oil',                          category: 'Pantry',  subcategory: 'Cooking Oils',   mealPrep: false, freezer: false, budget: false },
+  // PANTRY - Canned Goods
+  { id: 'pan4', name: 'Broth (Chicken, Beef, Veggie)',        category: 'Pantry',  subcategory: 'Canned Goods',   mealPrep: true,  freezer: true,  budget: true  },
+  { id: 'pan5', name: 'Canned Tuna / Salmon',                 category: 'Pantry',  subcategory: 'Canned Goods',   mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan6', name: 'Canned Beans',                         category: 'Pantry',  subcategory: 'Canned Goods',   mealPrep: true,  freezer: false, budget: true  },
+  { id: 'pan7', name: 'Canned Tomatoes',                      category: 'Pantry',  subcategory: 'Canned Goods',   mealPrep: true,  freezer: false, budget: true  },
+  // PANTRY - Spices
+  { id: 'pan8',  name: 'Garlic & Onion Powder',               category: 'Pantry',  subcategory: 'Spices',         mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan9',  name: 'Paprika & Cumin',                     category: 'Pantry',  subcategory: 'Spices',         mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan10', name: 'Turmeric',                            category: 'Pantry',  subcategory: 'Spices',         mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan11', name: 'Black Pepper & Sea Salt',             category: 'Pantry',  subcategory: 'Spices',         mealPrep: false, freezer: false, budget: true  },
+  // PANTRY - Condiments
+  { id: 'pan12', name: 'Hot Sauce / Sriracha',                category: 'Pantry',  subcategory: 'Condiments',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan13', name: 'Mustard (Dijon, Yellow, Spicy Brown)',category: 'Pantry',  subcategory: 'Condiments',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan14', name: 'Apple Cider / Balsamic Vinegar',      category: 'Pantry',  subcategory: 'Condiments',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan15', name: 'Salsa or Jarred Marinara Sauce',      category: 'Pantry',  subcategory: 'Condiments',     mealPrep: false, freezer: false, budget: true  },
+  { id: 'pan16', name: 'Soy Sauce or Coconut Aminos',         category: 'Pantry',  subcategory: 'Condiments',     mealPrep: false, freezer: false, budget: true  },
+  // PANTRY - Sweeteners
+  { id: 'pan17', name: 'Raw Honey / Maple Syrup',             category: 'Pantry',  subcategory: 'Sweeteners',     mealPrep: false, freezer: false, budget: false },
+  { id: 'pan18', name: 'Dark Chocolate (70%+ Cacao)',         category: 'Pantry',  subcategory: 'Sweeteners',     mealPrep: false, freezer: false, budget: false },
+  // PANTRY - Nuts & Seeds
+  { id: 'pan19', name: 'Nut Butters (Almond, Peanut, Cashew)',category: 'Pantry',  subcategory: 'Nuts & Seeds',   mealPrep: false, freezer: false, budget: false },
+  { id: 'pan20', name: 'Chia & Flax Seeds',                   category: 'Pantry',  subcategory: 'Nuts & Seeds',   mealPrep: false, freezer: true,  budget: false },
+  // PANTRY - Dry Staples
+  { id: 'pan21', name: 'Brown Rice, Quinoa, Oats',            category: 'Pantry',  subcategory: 'Dry Staples',    mealPrep: true,  freezer: false, budget: true  },
+  { id: 'pan22', name: 'Whole Wheat or Almond Flour',         category: 'Pantry',  subcategory: 'Dry Staples',    mealPrep: false, freezer: true,  budget: true  },
+];
